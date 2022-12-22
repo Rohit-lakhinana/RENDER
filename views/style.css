@@ -1,0 +1,120 @@
+.formData{
+    background-color: rgb(173, 214, 215);
+    color: blue;
+    padding: 20px;
+    }
+    
+    label{
+        font-size: larger;
+        font-weight: bolder;
+        background-color: white;
+        border-radius: 15px;
+        color:blue;
+        width: 200px;
+        padding: 9px;
+    }
+    
+    input, select{
+        width: 400px;
+        height: 50px;
+        color: crimson;
+        font-weight: bold;
+        font-size: large;
+        border-radius: 15px;
+    }
+    
+    b{
+        color: crimson;
+    }
+    
+    .inputclass:hover{
+        background-color: rgb(153, 171, 121);
+        color: white;
+    }
+    
+    textarea{
+        border-radius: 15px;
+        color:darkblue;
+        font-size: large;
+        font-weight: 400;
+    }
+    
+    .NEWS{
+    background-color:rgb(224, 185, 171);
+    color:black;
+    padding: 20px;
+    }
+    
+    .heading{
+      border: 2px solid black;
+      background-color: black;
+      height: 110px;
+      text-align: center;
+      padding-top: 18px;
+      color: white;
+      font-size:xx-large;
+      font-weight: bolder;  
+      display: flex;
+      padding-left: 24%;
+    }
+    
+    .heading2{
+        height:150px;
+    }
+    
+    .imglogo{
+        width: 80px;
+        height: 80px;
+        margin-left: 2%;
+    }
+    
+    hr{
+        background-color: white;
+        height: 9px;
+    }
+    
+    ul{
+        margin-left: 40%;
+        font-size: 20px;
+    }
+    img{
+        width: 500px;
+        height: 500px;
+        border-radius: 22px;
+        margin-bottom: 5px; 
+    }
+    
+    .side{
+        border-radius: 22px;
+        text-align: center;
+        background-color:aliceblue;
+        color: rgb(198, 63, 90);
+        font-size:x-large;
+        font-weight: bolder;
+        padding: 9px;
+        width: 290px;
+    }
+    
+    button{
+        width: 200px;
+        padding: 9px;
+        background-color: rgb(162, 119, 87);
+        border-radius: 24px;
+        color: white;
+        font-size: larger;
+        font-weight: bolder;
+    }
+    
+    button:hover{
+        background-color: white;
+        color: chocolate;
+    }
+    
+    footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 9px;
+        padding: 9px;
+    }

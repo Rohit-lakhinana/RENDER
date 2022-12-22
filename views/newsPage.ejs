@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NEWS-APP</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head> 
+<body>
+    <h2 class="heading heading2"><img class="imglogo" src="news.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        UPLOAD NEWS 
+        <ul>
+        <li><a href="./policy.html">PRIVACY-POLICY</a></li>
+        <li><a href="./termsandconditions.html">TERMS & CONDITIONS</a></li>
+        </ul>
+    </h2>       
+    <center>
+    <div class="formData">
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <div>
+                <label for="hline">HEADLINE : <b>*</b></label>
+                <input class="inputclass" type="text" id="hline" name="hline" placeholder="Enter NEWS_HEADLINE" required>
+            </div>
+            <br>
+            <div>
+                <label for="image">UPLOAD IMAGE <b>*</b></label>
+                <input  type="file" id="image" name="image" required>
+            </div>
+            <br>
+            <div>
+                <label for="desc">UPLOAD NEWS <b>*</b></label>
+                <textarea  id="desc" name="desc" rows="5" cols="50" placeholder="Description" required>
+                </textarea>
+            </div>
+            <br>
+            <div>
+                <label for="state"> SELECT STATE : </label>
+                <select class="inputclass" id="state" name="state">
+                    <option></option>
+                    <option>Andhra Pradesh</option>
+                    <option>Arunachal Pradesh</option>
+                    <option>Assam</option>
+                    <option>Assam</option>
+                    <option>Bihar</option>
+                    <option>Chhattisgarh</option>
+                    <option>Goa</option>
+                    <option>Gujarat</option>
+                    <option>Haryana</option>
+                    <option>Himachal Pradesh</option>
+                    <option>Jammu and Kashmir</option>
+                    <option>Jharkhand</option>
+                    <option>Karnataka</option>
+                    <option>Kerala</option>
+                    <option>Madhya Pradesh</option>
+                    <option>Maharashtra</option>
+                    <option>Manipur</option>
+                    <option>Meghalaya</option>
+                    <option>Mizoram</option>
+                    <option>Nagaland</option>
+                    <option>Odisha</option>
+                    <option>Punjab</option>
+                    <option>Rajasthan</option>
+                    <option>Sikkim</option>
+                    <option>Tamil Nadu</option>
+                    <option>Telangana</option>
+                    <option>Tripura</option>
+                    <option>Uttar Pradesh</option>
+                    <option>Uttarakhand</option>
+                    <option>West Bengal</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="dist">DISTRICT : </label>
+                <input class="inputclass" type="text" id="dist" name="dist" placeholder="Enter District">
+            </div>
+            <br>
+            <div>
+                <label for="pincode">PINCODE: </label>
+                <input class="inputclass" type="number" id="pincode" name="pincode" placeholder="Enter pincode">
+            </div>
+            <br>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    </center>
+   
+      
+ <br>
+    <h2 class="heading">READ NEWS FROM BELOW BY CLICKING THE LINK</h2>
+    <%- include('./news.ejs') %>
+ <br>
+ <br>
+ <footer>
+    <p><b>Author :</b> Rohit Lakhinana</p>
+    <p><b>For more Queries please :</b> <a href="mailto:itsmadhan98@gmail.com">Click-Here-To-Contact-Me</a></p>
+ </footer>   
+</body>
+</html>

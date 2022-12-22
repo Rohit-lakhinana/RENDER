@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <% items.forEach(function(image) { %>
+        <div class="NEWS">
+        <center>
+        <h2 class="side">HEADLINE</h2> <h2><%= image.hline %></h2>
+        <img src="data:image/<%=image.img.contentType%>;base64,<%=image.img.data.toString('base64')%>" alt="image">
+        </center>
+        <h2 class="side">MAIN NEWS</h2><h2><%= image.desc %></h2>
+        <h2 class="side">STATE NAME</h2><h2><%= image.state %></h2>
+        <h2 class="side">DISTRICT NAME</h2><h2><%= image.dist %></h2>
+        <h2 class="side">PINCODE</h2><h2><%= image.pincode %></h2>
+                         <hr>
+            <% }) %>
+        </div>
+</body>
+</html>
